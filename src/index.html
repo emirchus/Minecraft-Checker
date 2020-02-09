@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Minecraft Checker</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="./assets/unicons/css/unicons.css">
+</head>
+
+<body>
+  <div class="mount">
+    <header>
+      <h2>minecraft checker
+        <span>By Undervolt studio</span>
+      </h2>
+      <a class='uil uil-times-circle'></a>
+    </header>
+    <div class="app">
+      <div id="home" class="divWrap">
+        <div class="settings-combos">
+          <form class="form">
+            <div class="file-upload-wrapper" data-text="Minecraft accounts!">
+              <input name="file-upload-field" type="file" accept="text/plain" id="input-combos"
+                class="file-upload-field" value="">
+            </div>
+            <div class="file-upload-wrapper" data-text="Proxies file!">
+              <input name="file-upload-field" type="file" accept="text/plain" id="input-proxy" class="file-upload-field"
+              value="24" min="1" max="100"/>
+            </div>
+            <label id="timeout-time" for="">Timeout (seconds): 0</label>
+            <input type="range" name="" id="timeout">
+          </form>
+          <div class="loader">
+            <div class="head">
+              <p>Email</p>
+              <p>Password</p>
+            </div>
+            <div id="accounts-wrapper" class="account-list">
+              
+            </div>
+          </div>
+
+        </div>
+        <div class="combos-output">
+          <div class="head">
+            <button id="start-button">start <i class='uil uil-play'></i></button>
+            <button id="stop-button">stop <i class='uil uil-stop-circle'></i></button>
+            <button id="save-button">save hits <i class='uil uil-file-download'></i></button>
+            <p id="test-count">tested: 0</p>
+            <p id="good-count">good: 0</p>
+            <p id="error-count">error: 0</p>
+          </div>
+          <div class="loader">
+            <div class="head">
+              <p>Email</p>
+              <p>Password</p>
+              <p>has quest</p>
+              <p>has cape</p>
+            </div>
+            <div id="combos-output" class="account-list">
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
